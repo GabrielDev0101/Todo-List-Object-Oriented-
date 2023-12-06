@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
+
 body {
     width: 100%;
-    background-color: lightblue;
+    background-color: cadetblue;
 }
 
 .container {
@@ -14,11 +15,11 @@ body {
     margin: 10rem auto;
 }
 
-.container .title{
+.container .title {
     text-align: center;
 }
 
-.container .form{
+.container .form {
     background-color: aliceblue;
     margin-top: 1rem;
     display: flex;
@@ -27,7 +28,7 @@ body {
     overflow: hidden;
 }
 
-.form input{
+.form input {
     flex: 1;
     padding: 0.7rem;
     border: none;
@@ -35,23 +36,34 @@ body {
     outline: none;
 }
 
-.form .btn{
+.form .btn {
     padding: 0.7rem;
-    background-color: darkblue;
+    background-color: darkcyan;
     color: aliceblue;
     cursor: pointer;
     border: none;
+    transition: background-color 0.3s ease;
 }
 
-.list .todo{
+.form .btn:hover {
+    background-color: midnightblue;
+}
+
+.list .todo {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: aliceblue;
     margin-top: 0.5rem;
     padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.todo span{
+.list .todo:hover {
+    background-color: #f0f0f0;
+}
+
+.todo span {
     cursor: pointer;
 }
